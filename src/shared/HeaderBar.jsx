@@ -91,16 +91,36 @@ function HeaderBar() {
             <div className="collapse navbar-collapse justify-content-between px-0 px-lg-3 " id="navbarCollapse">
                 <div className="navbar-nav mr-auto ml-auto py-0 ">
                   <Link className="nav-item nav-link" to="/"> Home</Link>
-                    <a href="category.html" className="nav-item nav-link">Category</a>
-                    <a href="single.html" className="nav-item nav-link">Single News</a>
-                    <div className="nav-item dropdown">
-                        <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+
+                  <div className="nav-item dropdown">
+                        <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                         <div className="dropdown-menu rounded-0 m-0">
-                            <a href="#" className="dropdown-item">Menu item 1</a>
-                            <a href="#" className="dropdown-item">Menu item 2</a>
-                            <a href="#" className="dropdown-item">Menu item 3</a>
+                        <Link className="dropdown-item" to="/news"> News</Link>
+                       <Link className="dropdown-item" to="/article"> Article</Link>
+                        <Link className="dropdown-item" to="/knowledge"> Knowledge</Link>
                         </div>
                     </div>
+
+                
+                  <Link className="nav-item nav-link" to="/forum"> Forum</Link>
+                    <div className="nav-item dropdown">
+                        <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">learning</a>
+                        <div className="dropdown-menu rounded-0 m-0">
+                        <Link className="dropdown-item" to="/math"> Math</Link>
+                        <Link className="dropdown-item" to="/eng"> English</Link>
+                        <Link className="dropdown-item" to="/japan"> Japan</Link>
+                        </div>
+                    </div>
+                    <div className="nav-item dropdown">
+                        <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Private</a>
+                        <div className="dropdown-menu rounded-0 m-0">
+                        <Link className="dropdown-item" to="/religion"> Religion</Link>
+                        <Link className="dropdown-item" to="/project"> Project</Link>
+                        <Link className="dropdown-item" to="/Album"> Album</Link>
+                        <Link className="dropdown-item" to="/Album"> Activity</Link>
+                        </div>
+                    </div>
+                    <Link className="nav-item nav-link" to="/portfolio"> Portfolio</Link>
                     <Link className="nav-item nav-link" to="/contact"> Contact</Link>
                 </div>
                

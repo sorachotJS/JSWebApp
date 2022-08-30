@@ -1,3 +1,4 @@
+import AboutMe from '../components/AboutMe'
 import ArticleComponent from '../components/ArticleComponent'
 import ContentOneComponent from '../components/ContentOneComponent'
 import KnowComponent from '../components/KnowledgeComponent'
@@ -10,10 +11,12 @@ function Home(){
         <>
             <MainLayout>
                 <SlideCom />
+                <AboutMe />
                 <ContentOneComponent />
                 <NewsComponent />
                 <ArticleComponent />
                 <KnowComponent />
+                
             </MainLayout>
         </>
     )
